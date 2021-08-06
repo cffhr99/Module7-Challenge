@@ -19,3 +19,6 @@ Only *1549* employees are eligible to have mentorship program.
 ![Total_Mentorshi](https://github.com/cffhr99/Module7-Challenge/blob/main/image/total_mentorship.PNG?raw=true)
 
 ## Summary
+The table below is the number of employees who may apply for retiring of each department.  
+![retiring_dept](https://github.com/cffhr99/Module7-Challenge/blob/main/image/retiring_dept.PNG?raw=true)  
+The departemtns of *Development*, * Production* and *Sales* have the largest three number of retiring employees.
