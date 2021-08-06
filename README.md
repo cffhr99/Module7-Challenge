@@ -12,5 +12,9 @@ The table below is the output dataset of retiring employees for each titles.
 ![retiring_title](https://github.com/cffhr99/Module7-Challenge/blob/main/image/retiring_title.PNG?raw=true)  
 It is obvious that *Senior Engineer*, *Senior Staff* and *Engineer*  have the largest three number of employees likely preparing for retirement.
 
+### Mentorship program
+The table is the first ten examples of employees who are eligible to participate in a mentorship program.  
+![mentorship_program](https://github.com/cffhr99/Module7-Challenge/blob/main/image/mentorship_eligibilty.PNG?raw=true)  
+Only *1549* employees are eligible to have mentorship program.
 
 ## Summary
