@@ -7,5 +7,10 @@ The purpose of this project is to perform analysis on an employee data for a com
 There are six original csv files:[original dataset](https://github.com/cffhr99/Module7-Challenge/tree/main/data) and four output dataset [Output_Dataset](https://github.com/cffhr99/Module7-Challenge/tree/main/csv).
 ## Results
 
+### Number of retiring employees
+The table below is the output dataset of retiring employees for each titles.
+![retiring_title](https://github.com/cffhr99/Module7-Challenge/blob/main/image/retiring_title.PNG?raw=true)  
+It is obvious that *Senior Engineer*, *Senior Staff* and *Engineer*  have the largest three number of employees likely preparing for retirement.
+
 
 ## Summary
