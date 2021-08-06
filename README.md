@@ -8,7 +8,7 @@ There are six original csv files:[original dataset](https://github.com/cffhr99/M
 ## Results
 
 ### Number of retiring employees
-The table below is the output dataset of retiring employees for each titles.
+The table below is the output dataset of retiring employees for each titles.  
 ![retiring_title](https://github.com/cffhr99/Module7-Challenge/blob/main/image/retiring_title.PNG?raw=true)  
 It is obvious that *Senior Engineer*, *Senior Staff* and *Engineer*  have the largest three number of employees likely preparing for retirement.
 
