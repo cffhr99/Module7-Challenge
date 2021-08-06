@@ -15,6 +15,7 @@ It is obvious that *Senior Engineer*, *Senior Staff* and *Engineer*  have the la
 ### Mentorship program
 The table is the first ten examples of employees who are eligible to participate in a mentorship program.  
 ![mentorship_program](https://github.com/cffhr99/Module7-Challenge/blob/main/image/mentorship_eligibilty.PNG?raw=true)  
-Only *1549* employees are eligible to have mentorship program.
+Only *1549* employees are eligible to have mentorship program.  
+![Total_Mentorshi](https://github.com/cffhr99/Module7-Challenge/blob/main/image/total_mentorship.PNG?raw=true)
 
 ## Summary
