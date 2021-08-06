@@ -131,3 +131,79 @@ ORDER BY es.emp_no
 SELECT * FROM mentorship_eligibilty
 LIMIT 10;
 
+SELECT COUNT(*) FROM mentorship_eligibilty;
+
+--retirement dept
+SELECT es.emp_no,
+       es.first_name,
+	   es.last_name,
+	   de.dept_no,
+	   de.from_date,
+	   de.to_date
+INTO retirement_dept
+From dept_emp AS de
+INNER JOIN Employees AS es
+   ON (es.emp_no = de.emp_no)
+WHERE (es.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY es.emp_no;
+
+
+SELECT DISTINCT ON (rd.emp_no)
+       rd.emp_no,
+       rd.first_name,
+	   rd.last_name,
+	   rd.dept_no
+INTO unique_dept
+From retirement_dept as rd
+ORDER BY rd.emp_no, rd.to_date DESC
+
+SELECT COUNT(ud.dept_no),
+       ud.dept_no
+INTO retiring_dept
+FROM Unique_dept AS ud
+GROUP BY ud.dept_no
+ORDER BY ud.count DESC
+
+SELECT rd.count,
+       de.dept_name
+INTO retiring_dept_name
+From departments as de
+INNER JOIN retiring_dept as rd
+ON(rd.dept_no = de.dept_no)
+ORDER BY rd.count
+
+SELECT * FROM retiring_dept_name
+
+-- mentorship in dept
+SELECT DISTINCT ON(es.emp_no)
+       es.emp_no,
+       es.first_name,
+	   es.last_name,
+	   es.birth_date,
+	   de.from_date,
+	   de.to_date,
+	   de.dept_no
+INTO mentorship_eligibilty_dept
+FROM employees AS es
+INNER JOIN dept_emp AS de 
+ON (es.emp_no = de.emp_no)
+WHERE (de.to_date = '9999-01-01') 
+AND (es.birth_date BETWEEN '1965-01-01' and '1965-12-31')
+ORDER BY es.emp_no
+
+SELECT COUNT(med.dept_no),
+       med.dept_no
+INTO mentorship_eligibilty_dept_group
+FROM mentorship_eligibilty_dept AS med
+GROUP BY med.dept_no
+ORDER BY med.count DESC
+
+SELECT medg.count,
+       de.dept_name
+INTO mentorship_eligibilty_dept_name
+From departments as de
+INNER JOIN mentorship_eligibilty_dept_group as medg
+ON(medg.dept_no = de.dept_no)
+ORDER BY medg.count
+
+SELECT * FROM mentorship_eligibilty_dept_name
